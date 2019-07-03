@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+activityOne:
+  title: Adverb Practice
+  instruction: Try putting the words in the correct places
+  lesson_id: lessonOne
+
+activityTwo:
+  title: MyString
+  instruction: Try putting the words good places
+  lesson_id: lessonTwo

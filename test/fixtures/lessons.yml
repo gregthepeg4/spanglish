@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+lessonOne:
+  title: Lesson One Title
+  explanation: The lesson has a very long explanation
+  video_url: www.youtube.com/lessonone
+
+lessonTwo:
+  title: Lesson Two Title
+  explanation: The lesson has a very long explanation
+  video_url: www.youtube.com/lessontwo

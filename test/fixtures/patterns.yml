@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+patternOne:
+  lesson_id: lessonOne
+  sequence: mas adjective que
+
+patternTwo:
+  lesson_id: lessonTwo
+  sequence: mas adjective que

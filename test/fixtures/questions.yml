@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+questionOne:
+  translation: My car is better than your car
+  answer: Mi coche es mejor que tu coche
+  options: es mejor que el la
+  questionable: activityOne
+
+questionTwo:
+  translation: My car is bigger than your car
+  answer: Mi coche es mas grande que tu coche
+  options: es mas grande el la
+  questionable: testOne
