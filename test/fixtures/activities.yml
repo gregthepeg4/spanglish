@@ -3,9 +3,9 @@
 activityOne:
   title: Adverb Practice
   instruction: Try putting the words in the correct places
-  lesson_id: lessonOne
+  lesson: lessonOne
 
 activityTwo:
   title: MyString
   instruction: Try putting the words good places
-  lesson_id: lessonTwo
+  lesson: lessonTwo

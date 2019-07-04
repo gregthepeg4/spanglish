@@ -4,5 +4,5 @@ class Lesson < ApplicationRecord
   has_many :examples
   has_many :patterns
   has_many :activities
-  
+  has_one :quiz
 end
