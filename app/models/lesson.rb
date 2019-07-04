@@ -5,4 +5,5 @@ class Lesson < ApplicationRecord
   has_many :patterns
   has_many :activities
   has_one :quiz
+  accepts_nested_attributes_for :examples, :patterns, :activities, :quiz
 end

@@ -1,2 +1,91 @@
-<%= form_for :lesson do |f| %>
+<%= form_for lesson do |f| %>
+  <div class="field"
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field"
+    <%= f.label :explanation %>
+    <%= f.text_field :explanation %>
+  </div>
+
+  <div class="field"
+    <%= f.label :video_url %>
+    <%= f.text_field :video_url %>
+  </div>
+
+  <%= f.fields_for :examples do |example| %>
+    <div class="field"
+      <%= example.label :phrase %>
+      <%= example.text_field :phrase %>
+    </div>
+  <% end %>
+
+  <%= f.fields_for :patterns do |pattern| %>
+    <div class="field"
+      <%= pattern.label :sequence %>
+      <%= pattern.text_field :sequence %>
+    </div>
+  <% end %>
+
+  <%= f.fields_for :activities do |activity| %>
+    <div class="field"
+      <%= activity.label :title %>
+      <%= activity.text_field :title %>
+    </div>
+
+    <div class="field"
+      <%= activity.label :instruction %>
+      <%= activity.text_field :instruction %>
+    </div>
+
+    <%= activity.fields_for :questions do |question| %>
+      <div class="field"
+        <%= question.label :translation %>
+        <%= question.text_field :translation %>
+      </div>
+
+      <div class="field"
+        <%= question.label :answer %>
+        <%= question.text_field :answer %>
+      </div>
+
+      <div class="field"
+        <%= question.label :options %>
+        <%= question.text_field :options %>
+      </div>
+
+    <% end %>
+
+  <% end %>
+
+  <%= f.fields_for :quiz do |quiz| %>
+    <%= quiz.fields_for :questions do |question| %>
+      <div class="field"
+        <%= question.label :translation %>
+        <%= question.text_field :translation %>
+      </div>
+
+      <div class="field"
+        <%= question.label :answer %>
+        <%= question.text_field :answer %>
+      </div>
+
+      <div class="field"
+        <%= question.label :options %>
+        <%= question.text_field :options %>
+      </div>
+
+    <% end %>
+
+  <% end %>
+
+
+  <%= f.submit %>
 <% end %>
+
+<div id='hello'>
+  <app>
+  </app>
+</div>
+<%= javascript_pack_tag 'hello_vue' %>
