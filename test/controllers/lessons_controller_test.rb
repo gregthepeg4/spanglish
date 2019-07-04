@@ -16,5 +16,13 @@ class LessonsControllerTest < ActionDispatch::IntegrationTest
     assert_select "h1", @lessonOne.title
   end
 
+  test "gets new" do
+    @newLesson=Lesson.new
+    get new_lesson_path
+    assert_response :success
+    assert_select "form", 1
+  end
+
+
 
 end

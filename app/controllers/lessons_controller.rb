@@ -5,6 +5,9 @@ class LessonsController < ApplicationController
 
   def show
   end
+  def new
+    @lesson=Lesson.new
+  end
 
   private
   def set_lesson
